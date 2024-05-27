@@ -33,5 +33,5 @@ let getJohnOrders = () => {
 };
 
 // Start coding here
-const handleData = (data) => console.log(data);
+let handleData = (data) => console.log(data);
 getJohnProfile().then(handleData).then(getJohnOrders).then(handleData);

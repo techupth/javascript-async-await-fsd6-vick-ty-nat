@@ -13,5 +13,5 @@ let getJohnProfile = () => {
 };
 
 // Start coding here
-const handleData = (data) => console.log(data);
-getJohnProfile().catch(handleData);
+let handleData = (data) => console.log(data);
+getJohnProfile().then(handleData).catch(handleData);

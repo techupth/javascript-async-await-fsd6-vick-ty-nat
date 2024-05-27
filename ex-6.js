@@ -40,8 +40,8 @@ async function fetchJohnData() {
     handleData(johnProfile);
     const johnOrders = await getJohnOrders();
     handleData(johnOrders);
-  } catch (error) {
-    console.log(error);
+  } catch (errorMessage) {
+    console.log(errorMessage);
   }
 }
 

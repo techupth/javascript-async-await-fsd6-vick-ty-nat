@@ -12,6 +12,14 @@ let getJohnProfile = async () => {
   });
 };
 // Start coding here
-const johnProfile = await getJohnProfile();
-const handleData = (data) => console.log(data);
-handleData(johnProfile);
+async function fetchJohnData() {
+  try {
+    let johnProfile = await getJohnProfile();
+    console.log(johnProfile);
+  } catch (errorMessage) {
+    // console.log(errorMessage);
+    console.error(errorMessage);
+  }
+}
+
+fetchJohnData();

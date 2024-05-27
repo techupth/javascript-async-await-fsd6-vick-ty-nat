@@ -13,6 +13,10 @@ let getJohnProfile = async () => {
   });
 };
 // Start coding here
-const johnProfile = await getJohnProfile();
-const handleData = (data) => console.log(data);
-handleData(johnProfile);
+async function fetchJohnData() {
+  let johnProfile = await getJohnProfile();
+  let handleData = (data) => console.log(data);
+  handleData(johnProfile);
+}
+
+fetchJohnData();
